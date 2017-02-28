@@ -1,0 +1,40 @@
+# -------------------------------------------
+# Configuraciones para el BalanceadorRedis
+# -------------------------------------------
+listaInstanciasRedis:
+  - !pe.gob.sunat.balanceador.redis.modelos.Redis
+    host: EQSE0001
+    clave: 
+    puerto: 6379
+  - !pe.gob.sunat.balanceador.redis.modelos.Redis
+    host: EQSE0002
+    clave: 
+    puerto: 12345
+
+# -------------------------------------------
+# Configuraciones para este microservicio
+# -------------------------------------------
+logging:
+  level: INFO
+  loggers:
+    io.dropwizard: WARN
+    org.eclipse: WARN
+    org.hibernate: WARN
+    org.apache.camel: WARN
+    com.mchange: WARN
+    com.netflix: WARN
+    org.jboss.weld.Version: INFO
+    org.jboss.weld: WARN
+    io.dropwizard.jersey.DropwizardResourceConfig: INFO
+    io.dropwizard.server.ServerFactory: INFO
+    pe.gob.sunat.framework.plataformaunica.model.jpa: WARN
+    org.glassfish.jersey.server.ServerRuntime: FATAL
+    org.jboss.weld.environment.servlet.logging: DEBUG
+  appenders:
+    - type: file
+      currentLogFilename: logs\sunat.log
+      archivedLogFilenamePattern: logs\sunat-%d.log.gz
+      archivedFileCount: 5
+    - type: console
+
+

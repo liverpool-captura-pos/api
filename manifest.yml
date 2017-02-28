@@ -2,7 +2,7 @@ applications:
 - path: target/api.war
   memory: 512M
   instances: 1
-  domain: mybluemix.net
-  name: GapsiLiverpoolApp1
-  host: GapsiLiverpoolApp1
+  domain: gapsiliverpooldominio.com
+  name: api
+  host: api
   disk_quota: 1024M

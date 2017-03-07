@@ -3,6 +3,6 @@ applications:
   memory: 512M
   instances: 1
   domain: mybluemix.net
-  name: api-0.0.1
-  host: api-0.0.1
+  name: api01lv
+  host: api01lv
   disk_quota: 1024M

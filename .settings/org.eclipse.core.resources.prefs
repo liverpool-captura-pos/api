@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+encoding//src/main/resources/Api.properties=UTF-8
+encoding//src/main/resources/configuracion.yml=UTF-8
+encoding//src/main/webapp/manifest.yml=UTF-8
+encoding/<project>=UTF-8
 encoding/manifest.yml=UTF-8

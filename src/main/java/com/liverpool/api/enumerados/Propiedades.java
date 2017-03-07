@@ -4,7 +4,7 @@ import lombok.Getter;
 
 /**
  * @autor: Genaro Bermúdez [26/02/2017]
- * @modificado: Genaro Bermúdez [26/02/2017]
+ * @modificado: Genaro Bermúdez [06/03/2017]
  * @descripción: enumerado que contiene el catálogo de mensajes y constantes de todo el componente
  * @since-versión: 1.0
  */
@@ -27,12 +27,15 @@ public enum Propiedades {
 	ESTATUS_EFECTIVO_MDM_ENVIO_EXITOSO("13"),
 	ESTATUS_EFECTIVO_MDM_ENVIO_FALLIDO("14"),
 	
-	/** Códigos utilizados durante la operación Cargar Configuración */
-	API_CONFIGURACION_NOMBRE("API_CONFIGURACION_NOMBRE"),
-	API_CONFIGURACION_EXITO_CODIGO("API_CONFIGURACION_EXITO_CODIGO"),
-	API_CONFIGURACION_EXITO_MENSAJE("API_CONFIGURACION_EXITO_MENSAJE"),
-	API_CONFIGURACION_CODIGO_ERROR_001("API_CONFIGURACION_CODIGO_ERROR_001"),
-	API_CONFIGURACION_MENSAJE_ERROR_001("API_CONFIGURACION_MENSAJE_ERROR_001"),
+	/** Códigos utilizados durante la operación Cargar Propiedades */
+	API_PROPIEDADES_EXITO("API_PROPIEDADES_EXITO"),
+	API_PROPIEDADES_ERROR_001("API_PROPIEDADES_ERROR_001"),
+	API_PROPIEDADES_ERROR_002("API_PROPIEDADES_ERROR_002"),
+	
+	/** Códigos utilizados durante la operación Cargar Configuraciones */
+	API_CONFIGURACION_EXITO("API_CONFIGURACION_EXITO"),
+	API_CONFIGURACION_ERROR_001("API_CONFIGURACION_ERROR_001"),
+	API_CONFIGURACION_ERROR_002("API_CONFIGURACION_ERROR_002"),
 	
 	;
 

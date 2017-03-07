@@ -16,13 +16,13 @@ import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.liverpool.api.modelos.Aplicacion;
 import com.liverpool.api.modelos.Cliente;
 import com.liverpool.api.modelos.Negocio;
 import com.liverpool.api.modelos.Resultado;
 import com.liverpool.api.modelos.StatusCode;
 import com.liverpool.api.modelos.Tarjeta;
+import com.liverpool.api.tos.ApiTo;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -33,11 +33,12 @@ import lombok.extern.slf4j.Slf4j;
 @Singleton
 public class Tarjetas {
 
-	private static final ObjectMapper ob = new ObjectMapper();
+	/** Miembros de la clase */
+	private static volatile ApiTo apiTo;
 
-	public Tarjetas() {
-		super();
-		System.out.println("Se ha cargado el constructor");
+	/** Intercambio de parámetros */
+	public static void RegistrarInstancia(ApiTo apiTo) {
+		Tarjetas.apiTo = apiTo;
 	}
 
 	@GET
@@ -100,7 +101,7 @@ public class Tarjetas {
 
 		log.info("Ha finalizado la ejecución del recuro Tarjeta en la operación: consultarTarjeta");
 
-		return Response.status(statusCode.getCodigo()).entity(resultado.toJson(ob)).build();
+		return Response.status(statusCode.getCodigo()).entity(resultado.toJson(apiTo.getObjectMapper())).build();
 
 	}
 
@@ -149,7 +150,7 @@ public class Tarjetas {
 
 		log.info("Ha finalizado la ejecución del recuro Tarjeta en la operación: consultarTarjeta");
 
-		return Response.status(statusCode.getCodigo()).entity(resultado.toJson(ob)).build();
+		return Response.status(statusCode.getCodigo()).entity(resultado.toJson(apiTo.getObjectMapper())).build();
 
 	}
 
@@ -198,7 +199,7 @@ public class Tarjetas {
 
 		log.info("Ha finalizado la ejecución del recuro Tarjeta en la operación: consultarTarjeta");
 
-		return Response.status(statusCode.getCodigo()).entity(resultado.toJson(ob)).build();
+		return Response.status(statusCode.getCodigo()).entity(resultado.toJson(apiTo.getObjectMapper())).build();
 
 	}
 

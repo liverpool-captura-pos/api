@@ -25,6 +25,6 @@ public class Cliente implements Serializable {
 	private String nacimiento;
 	private String genero;
 	private String aceptaBeneficio;
-	private String estatus;
+	private String estatus; // OJO BAJA RESPUESTA
 
 }

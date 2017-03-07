@@ -19,7 +19,7 @@ public class Cifrado {
 	 * @autor: Genaro Bermúdez [22/01/2017]
 	 * @modificado: Genaro Bermúdez [22/01/2017]
 	 * @descripción: Metodo que permite aplicar el Cifrado César a una determinada cadena
-	 * @parametros: cadena: es un valor alfanúmerico el cual se desea encriptar (no debe contener carcteres especiales, ni acentos, ni 'ñ/Ñ'). Se espera que dicho valor venga natural
+	 * @parámetros: cadena: es un valor alfanúmerico el cual se desea encriptar (no debe contener carcteres especiales, ni acentos, ni 'ñ/Ñ'). Se espera que dicho valor venga natural
 	 * @retorno: devuelve un string con la conversión de la cadena en Cifrado César
 	 */
 	public static String Encriptar(String cadena) {
@@ -43,7 +43,7 @@ public class Cifrado {
 	 * @autor: Genaro Bermúdez [22/01/2017]
 	 * @modificado: Genaro Bermúdez [22/01/2017]
 	 * @descripción: método que permite revertir una cadena previamente con Cifrado César a una cadena natural
-	 * @parametros: cadena: es un valor alfanúmerico el cual se desea desencriptar (no debe contener carcteres especiales, ni acentos, ni 'ñ/Ñ'). Se espera que dicho valor venga en Cifrado César
+	 * @parámetros: cadena: es un valor alfanúmerico el cual se desea desencriptar (no debe contener carcteres especiales, ni acentos, ni 'ñ/Ñ'). Se espera que dicho valor venga en Cifrado César
 	 * @retorno: devuelve un string con la conversión de la cadena en natural
 	 */
 	public static String Desencriptar(String cadena) {
@@ -67,7 +67,7 @@ public class Cifrado {
 	 * @autor: Genaro Bermúdez [22/01/2017]
 	 * @modificado: Genaro Bermúdez [22/01/2017]
 	 * @descripción: método que permite limpiar algunos valores no permitidos
-	 * @parametros: ver parámetros de los métodos Encriptar o Desemcriptar
+	 * @parámetros: ver parámetros de los métodos Encriptar o Desemcriptar
 	 * @retorno: devuelve un string con la cadena limpia y lista para el procesamiento
 	 */
 	private static String LimpiarCadena(String cadena) {
@@ -85,7 +85,7 @@ public class Cifrado {
 	 * @autor: Genaro Bermúdez [22/01/2017]
 	 * @modificado: Genaro Bermúdez [22/01/2017]
 	 * @descripción: método que permite evaluar si la cadena cumple con las condiciones básicas para ser transformada en Cifrado César
-	 * @parametros: ver parámetros de los métodos Encriptar o Desemcriptar
+	 * @parámetros: ver parámetros de los métodos Encriptar o Desemcriptar
 	 * @retorno: devuelve un valor boolena que indica: true = si es correcta la cadena / false = no es correcta la cadena
 	 */
 	private static boolean ValidarCaracteresEspeciales(String cadena) {

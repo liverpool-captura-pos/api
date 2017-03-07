@@ -1,0 +1,13 @@
+# -------------------------------------------
+# Configuraciones base del API
+# -------------------------------------------
+api:
+  nombre: api CDP
+  version: 1.0
+baseDatos:
+  nombre: CDP
+  host: bluemix
+  puerto: 1234
+  usuario: liverpool
+  clave: liver123
+  jndi: jdbc/eventosgapsi-pgsql

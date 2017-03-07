@@ -1,5 +1,5 @@
 applications:
-- path: build/libs/api.war
+- path: build/libs/api-0.0.1.war
   memory: 512M
   instances: 1
   domain: gapsiliverpooldominio.com

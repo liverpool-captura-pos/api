@@ -2,7 +2,7 @@ applications:
 - path: build/libs/api-0.0.1.war
   memory: 512M
   instances: 1
-  domain: gapsiliverpooldominio.com
+  domain: mybluemix.net
   name: api
   host: api
   disk_quota: 1024M
